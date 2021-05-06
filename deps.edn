@@ -1102,6 +1102,38 @@
    :main-opts  ["-m" "closh.zero.frontend.rebel"]}
 
 
+  :extra/utils
+  {:extra-deps
+   {com.bhauman/rebel-readline {:mvn/version "RELEASE"}
+    com.gfredericks/user.clj {:mvn/version "RELEASE"}
+    org.clojure/core.async {:mvn/version "RELEASE"}
+    org.clojure/core.logic {:mvn/version "RELEASE"}
+    org.clojure/test.check {:mvn/version "RELEASE"}
+    org.clojure/core.cache {:mvn/version "RELEASE"}
+    com.clojure-goes-fast/clj-java-decompiler {:mvn/version "RELEASE"}
+    com.clojure-goes-fast/clj-memory-meter {:mvn/version "RELEASE"}
+    com.clojure-goes-fast/clj-async-profiler {:mvn/version "RELEASE"}
+    com.clojure-goes-fast/jvm-alloc-rate-meter {:mvn/version "RELEASE"}
+    com.clojure-goes-fast/jvm-hiccup-meter {:mvn/version "RELEASE"}
+    io.aviso/pretty {:mvn/version "RELEASE"}
+    criterium/criterium {:mvn/version "RELEASE"}
+    mvxcvi/puget {:mvn/version "RELEASE"}
+    com.hypirion/clj-xchart {:mvn/version "RELEASE"}
+    org.clojure/clojure {:mvn/version "RELEASE"}
+    generateme/fastmath {:mvn/version "RELEASE"}
+    manifold/manifold {:mvn/version "RELEASE"}
+    funcool/promesa {:mvn/version "RELEASE"}
+    metosin/jsonista {:mvn/version "RELEASE"}
+    clj-commons/pomegranate {:mvn/version "RELEASE"}}}
+
+  :extra/prof
+  {:extra-deps
+   {criterium/criterium {:mvn/version "0.4.6"}
+    com.clojure-goes-fast/clj-async-profiler {:mvn/version "0.5.0"}}
+   :jvm-opts ["-server"
+              "-XX:+UnlockDiagnosticVMOptions"
+              "-XX:+DebugNonSafepoints"
+              "-Djdk.attach.allowAttachSelf"]}
 
   } ;; End of alias definitions
 
